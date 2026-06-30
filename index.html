@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Reconnaissance MNIST</title>
+
+<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Reconnaissance des chiffres manuscrits</h1>
+
+<form method="POST" enctype="multipart/form-data">
+
+<input type="file" name="image" required>
+
+<br><br>
+
+<button>Prédire</button>
+
+</form>
+
+{% if image %}
+
+<h2>Image</h2>
+
+<img src="{{ image }}" width="200">
+
+{% endif %}
+
+{% if prediction is not none %}
+
+<div class="result">
+
+<h2>Résultat</h2>
+
+<h1>{{ prediction }}</h1>
+
+<p>Confiance : {{ confidence }} %</p>
+
+</div>
+
+{% endif %}
+
+</div>
+
+</body>
+
+</html>
