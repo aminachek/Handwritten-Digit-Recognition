@@ -4,7 +4,7 @@ Application permettant de reconnaître des chiffres écrits à la main à l’ai
 
 ## 🔧 Technologies
 
-Python, NumPy, TensorFlow / Keras, HTML, CSS, JavaScript (interface simple)
+Python, NumPy, TensorFlow , HTML, CSS, JavaScript (interface simple)
 
 ## ✨ Fonctionnalités
 
